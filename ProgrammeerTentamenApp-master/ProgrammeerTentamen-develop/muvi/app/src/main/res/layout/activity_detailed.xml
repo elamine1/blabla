@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_detailed"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollIndicators="right">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/titelTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/detailedFilmImageView"
+                android:layout_centerHorizontal="true"
+                android:text="Titel"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="30sp"
+                android:textStyle="normal|bold|italic"
+                android:padding="5dp"/>
+
+            <TextView
+                android:id="@+id/infoTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/releasedatumTV"
+                android:layout_alignStart="@+id/releasedatumTV"
+                android:layout_below="@+id/titelTV"
+                android:padding="5dp"
+                android:text="Informatie"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/specialfeaturesTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/specialfeaturesTV"
+                android:layout_alignStart="@+id/specialfeaturesTV"
+                android:layout_below="@+id/titelTV"
+                android:padding="5dp"
+                android:text="Special Features"
+                android:textColor="@android:color/white"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/releasedatumTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/infoTV"
+                android:layout_marginTop="12dp"
+                android:text="Releasedatum"
+                android:textColor="@android:color/white"
+                android:textStyle="normal|italic"
+                android:padding="5dp"/>
+
+            <TextView
+                android:id="@+id/ratingTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/releasedatumTV"
+                android:layout_alignStart="@+id/releasedatumTV"
+                android:layout_below="@+id/releasedatumTV"
+                android:layout_marginTop="12dp"
+                android:padding="5dp"
+                android:text="Rating"
+                android:textColor="@android:color/white"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
